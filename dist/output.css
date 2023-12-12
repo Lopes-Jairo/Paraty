@@ -1,0 +1,1452 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Fjalla+One&family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@100;400;500;600;700;800;900&family=Oswald&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Signika&family=Source+Code+Pro&display=swap');
+
+/*
+! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.\!hidden{
+  display: none !important;
+}
+
+.hidden{
+  display: none;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce{
+  animation: bounce 1s infinite;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-deep-blue{
+  --tw-text-opacity: 1;
+  color: rgb(0 4 11 / var(--tw-text-opacity));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.to-hide{
+  --tw-translate-x: -75%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.to-show{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+#grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  font-family: Poppins, sans-serif;
+}
+
+/*------------------------------------- HEADER ---------------------------------------------------------*/
+
+header{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../img/sea-bg.png);
+  padding-left: 5%;
+  padding-right: 5%;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+header>h1{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+nav{
+  display: flex;
+  background-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  /*BREAKPOINTS*/
+}
+
+@media (min-width: 769px){
+  nav{
+    gap: 1.75rem;
+  }
+}
+
+nav{
+  align-items: center;
+}
+
+@media (max-width: 1049px){
+  nav{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+nav{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (max-width: 1049px){
+  nav{
+    margin-top: 3.5rem;
+    height: 0px;
+    overflow: hidden;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 4 11 / var(--tw-bg-opacity));
+  }
+}
+
+/*ABRE A NAV QUANDO O MENU FOR CLICADO*/
+
+@media (max-width: 1049px){
+  input:checked~nav{
+    height: 11rem;
+  }
+}
+
+@media (min-width: 1050px){
+  header label{
+    display: none;
+  }
+}
+
+nav a{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+nav a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+/*OCULTA BOTAO MENU QUANDO CHECK MARCADO*/
+
+input:checked~label .btn-menu{
+  display: none !important;
+}
+
+/* MOSTRA BOTAO X QUANDO CHECK MARCADO*/
+
+input:checked~label .btn-x{
+  display: block !important;
+}
+
+/*OCULTA O MENU HAMBURGUER QUANDO A TELA CHEGAR EM 1050PX*/
+
+.btn-menu,
+.btn-x{
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 1050px){
+  .btn-menu,
+.btn-x{
+    display: none;
+  }
+}
+
+/*_________________________________________ FIM DO HEADER _____________________________________*/
+
+/*--------------------------------------------------- HERO -------------------------------------------------------------*/
+
+#hero{
+  position: relative;
+  grid-column: 1 / -1;
+  height: 100vh;
+  background-image: url(../img/sea-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+  padding-right: 5%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero #titles-hero-zip{
+  display: flex;
+  --tw-translate-y: -20%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#titles-hero-zip h4{
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+@media (max-width: 1049px){
+  #titles-hero-zip h4{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1050px){
+  #titles-hero-zip h4{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+#titles-hero-zip h1{
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+  /*breakpoints*/
+}
+
+@media (max-width: 1049px){
+  #titles-hero-zip h1{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1050px){
+  #titles-hero-zip h1{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+#titles-hero-zip button{
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 9999px;
+  border-width: 4px;
+  background-color: transparent;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+#titles-hero-zip button:hover{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (max-width: 768px){
+  #titles-hero-zip button{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+/*------- SIDEBAR -------*/
+
+#hero #sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  opacity: 0.4;
+}
+
+#sidebar #socials-links{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#socials-links a{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#socials-links a:hover{
+  --tw-scale-x: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (max-width: 768px){
+  #socials-links a{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+#hero #info-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#info-links a{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#info-links a:hover{
+  --tw-scale-x: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/*--------- CONTAINER DAS BOLHAS ----------*/
+
+#bubbles-zip{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-around;
+}
+
+#bubbles-zip img{
+  width: 3rem;
+}
+
+@keyframes bubbles{
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  70%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(-80vh);
+  }
+}
+
+#bubbles-zip img{
+  animation: bubbles 6s linear infinite;
+  opacity: 0;
+}
+
+#bubbles-zip img:nth-child(2) {
+  animation-delay: 6s;
+}
+
+#bubbles-zip img:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+#bubbles-zip img:nth-child(4) {
+  animation-delay: 1s;
+}
+
+#bubbles-zip img:nth-child(5) {
+  animation-delay: 4s;
+}
+
+#bubbles-zip img:nth-child(6) {
+  animation-delay: 7s;
+}
+
+#bubbles-zip img:nth-child(7) {
+  animation-delay: 2s;
+}
+
+/*_____________________________________________________ FIM HERO __________________________________________________________*/
+
+/*-------------------------------------------------------- ABOUT --------------------------------------------------------------*/
+
+#about{
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 4 11 / var(--tw-bg-opacity));
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+#about h1{
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+/*CONTAINER QUE ENGLOBA OS SUBTITULOS E IMAGEM DOS MERGULHADORES*/
+
+#about .content-about{
+  margin-top: 6rem;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.5rem;
+  /*BREAKPOINTS*/
+}
+
+@media (max-width: 1200px){
+  #about .content-about{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1537px) and (max-width: 2500px){
+  #about .content-about{
+    width: 80%;
+  }
+}
+
+/*CONTAINER QUE ENGLOBA OS SUBTITULOS*/
+
+.content-about #info-zip{
+  display: flex;
+  width: 50%;
+  flex: 1 1 0%;
+  flex-direction: column;
+  gap: 2.5rem;
+  /*BREAKPOINTS*/
+}
+
+@media (max-width: 1200px){
+  .content-about #info-zip{
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px){
+  .content-about #info-zip{
+    gap: 0.5rem;
+  }
+}
+
+#info-zip h3{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+  /*Breakpoints*/
+}
+
+@media (max-width: 768px){
+  #info-zip h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 1200px){
+  #info-zip h3{
+    text-align: center;
+  }
+}
+
+@media (max-width: 639px){
+  #info-zip h3{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+#info-zip p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  /*Breakpoints*/
+}
+
+@media (max-width: 1049px){
+  #info-zip p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 639px){
+  #info-zip p{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 1200px){
+  #info-zip #text-hidden-zip{
+    display: none;
+  }
+}
+
+/*CONTAINER QUE ENGLOBA A IMAGEM*/
+
+.content-about #photo-zip{
+  flex: 1 1 0%;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  /*BREAKPOINT*/
+}
+
+@media (max-width: 1200px){
+  .content-about #photo-zip{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 639px){
+  .content-about #photo-zip{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+#photo-zip img{
+  border-radius: 1rem;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+#photo-zip img:nth-child(2){
+  display: none;
+  /*Breakpoints*/
+}
+
+@media (max-width: 1200px){
+  #photo-zip img:nth-child(2){
+    display: block;
+  }
+}
+
+@media (max-width: 639px){
+  #photo-zip img:nth-child(2){
+    display: none;
+  }
+}
+
+/*_________________________________________________FIM DO ABOUT ________________________________________________________________*/
+
+/*---------------------------------------------------- SERVICE -------------------------------------------*/
+
+#service{
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*Container que engloba quem engloba os cards*/
+
+#service #wrapped{
+  width: 100%;
+  background-image: url(../img/medusa.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  @media (min-width: 1024px){
+    @media (min-width: 1280px){
+      #service #wrapped{
+        padding-left: 10rem;
+        padding-right: 10rem;
+      }
+    }
+  }
+}
+
+#wrapped h1{
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+/*Container que engloba os cards*/
+
+#wrapped #cards-wrapped{
+  margin: auto;
+  display: grid;
+  max-width: 80rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  /*Breakpoints*/
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 639px){
+  #wrapped #cards-wrapped{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px){
+  #wrapped #cards-wrapped{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+  #wrapped #cards-wrapped{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1536px){
+  #wrapped #cards-wrapped{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px){
+  #wrapped #cards-wrapped{
+    width: 90%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px){
+  #wrapped #cards-wrapped{
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+  #wrapped #cards-wrapped{
+    width: 90%;
+  }
+}
+
+/*Cards individuais*/
+
+#cards-wrapped #card{
+  margin: 1.25rem;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  @media (min-width: 1024px){
+    @media (min-width: 1280px){
+      #cards-wrapped #card{
+        border-bottom-width: 1px;
+      }
+    }
+  }
+}
+
+#cards-wrapped #card{
+  border-radius: 0.75rem;
+  border-bottom-width: 2px;
+  border-right-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 4 11 / var(--tw-bg-opacity));
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/*Icones dentro dos cards individuais*/
+
+#card span i {
+  /*As cores individuais de cada icone estão sendo definidas no HTML*/
+  border-radius: 9999px;
+  padding: 0.5rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#card h2{
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+#card p{
+  display: flex;
+  justify-content: center;
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+#card p i{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
+}
+
+/*___________________________________________________FIM DO SKILLS ___________________________________________*/
+
+/*----------------------------------------------------- FOOTER ---------------------------------------*/
+
+footer{
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer #sub-footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 4 11 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/*Parte superior do footer*/
+
+#top-footer{
+  text-align: center;
+}
+
+#top-footer h1{
+  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgb(81, 80, 80);
+}
+
+#top-footer>p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+/*Parte do meio do footer, onde fica os icones*/
+
+#desc-icon-footer{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+#desc-icon-footer .wrapped-icon-footer{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+}
+
+.wrapped-icon-footer img{
+  height: 9rem;
+  width: 10rem;
+}
+
+.wrapped-icon-footer p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+#bot-footer{
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  #bot-footer{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+#bot-footer p{
+  order: 2;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px){
+  #bot-footer p{
+    order: 1;
+    margin-top: 0px;
+  }
+}
+
+/*____________________________________________________FIM DO FOOTER _____________________________________*/
