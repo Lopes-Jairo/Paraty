@@ -14,13 +14,13 @@ html {
 
 .to-hide {
     @apply opacity-0 -translate-x-3/4;
-    transition: all 0.7s;
+    transition: all 1s;
 
 }
 
 .to-show {
     @apply opacity-100 translate-x-0;
-    transition: all 0.7s;
+    transition: all 1s;
 
 }
 
